@@ -24,25 +24,25 @@ public class LambdaApp implements RequestHandler<Map<String, Object>, GatewayRes
         } catch (ParserConfigurationException e) {
             return new GatewayResponse(
                     errorMessage,
-                    new HashMap<>(),
+                    headers,
                     500
             );
         } catch (IOException e) {
             return new GatewayResponse(
                     errorMessage,
-                    new HashMap<>(),
+                    headers,
                     500
             );
         } catch (SAXException e) {
             return new GatewayResponse(
                     errorMessage,
-                    new HashMap<>(),
+                    headers,
                     500
             );
         }
         return new GatewayResponse(
                 result,
-                new HashMap<>(),
+                headers,
                 200
         );
     }
