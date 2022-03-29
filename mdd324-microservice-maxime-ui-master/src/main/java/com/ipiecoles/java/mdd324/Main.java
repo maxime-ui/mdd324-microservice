@@ -27,7 +27,7 @@ public class Main {
             for(int j = 0; j < node.getChildNodes().getLength(); j++) {
                 String nodeName = node.getNodeName();
                 if (nodeName.equals("title")) {
-                    f.setTitre(node.getTextContent());
+                    f.setTitle(node.getTextContent());
                 }
                 if (nodeName.equals("description")) {
                  node.getTextContent().split("-");

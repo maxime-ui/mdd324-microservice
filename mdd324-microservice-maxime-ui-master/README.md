@@ -10,6 +10,11 @@ Retourner les films prochainement diffusés selon le site Allocine.
 GET /films
 Pour récupérer les films prochainement (?) diffusés au format RSS, http://rss.allocine.fr/ac/cine/prochainement?format=xml
 
+URL API
+
+https://qlyqjipa58.execute-api.us-east-1.amazonaws.com/prod/films
+
+
 ## Réponse HTTP : 200
 {
   "Response":"200",
