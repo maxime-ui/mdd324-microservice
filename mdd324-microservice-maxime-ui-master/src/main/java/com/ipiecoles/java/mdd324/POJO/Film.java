@@ -4,12 +4,12 @@ package com.ipiecoles.java.mdd324.POJO;
 import java.util.Objects;
 
 public class Film {
-    String title ;
+    String titre ;
     String categorie ;
     String description;
 
     public Film(String title, String categorie, String description) {
-        this.title = title;
+        this.titre = title;
         this.categorie = categorie;
         this.description = description;
     }
@@ -19,11 +19,11 @@ public class Film {
     }
 
     public String getTitle() {
-        return title;
+        return titre;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.titre = title;
     }
 
     public String getCategorie() {
@@ -45,7 +45,7 @@ public class Film {
     @Override
     public String toString() {
         return "ServiceFilm{" +
-                "title='" + title + '\'' +
+                "titre='" + titre + '\'' +
                 ", categorie='" + categorie + '\'' +
                 ", description='" + description + '\'' +
                 '}';
@@ -57,12 +57,12 @@ public class Film {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Film film = (Film) o;
-        return Objects.equals(title, film.title) && Objects.equals(categorie, film.categorie) && Objects.equals(description, film.description);
+        return Objects.equals(titre, film.titre) && Objects.equals(categorie, film.categorie) && Objects.equals(description, film.description);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(title, categorie, description);
+        return Objects.hash(titre, categorie, description);
     }
 }
 
