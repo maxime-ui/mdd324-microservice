@@ -31,7 +31,7 @@ public class Service_Films {
                 Node child = node.getChildNodes().item(j);
                 String nodeName = child.getNodeName();
 
-                if (nodeName.equals("title")) {
+                if (nodeName.equals("titre")) {
                     f.setTitle(child.getTextContent());
                 }
                 if (nodeName.equals("description")) {
