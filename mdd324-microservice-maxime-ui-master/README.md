@@ -36,17 +36,3 @@ https://qlyqjipa58.execute-api.us-east-1.amazonaws.com/prod/films
   "Response":"500",
   "error": "Le serveur à rencontrer une erreur"
 }
-
-
-##Réponse HTTP : error 502/503
-{
-  "Response":"502/503",
-  "error": "Le serveur ne répond pas ou est indisponible"
-}
-
-
-##Réponse HTTP error 504
-{
-  "Response":"504",
-  "error": "Le temps d'attente pour atteindre le serveur a expiré"
-}

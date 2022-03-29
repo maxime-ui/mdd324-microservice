@@ -37,11 +37,11 @@ public class Service_Films {
                 if (nodeName.equals("description")) {
                     String[] splitString = child.getTextContent().split(" - ");
                     String filmCategories = splitString[0];
-                    String filmDescription = splitString[1];
+                    String filmDescription = splitString[1].replace("</p><p>"," ");
 
                     if (filmCategories.indexOf(" (") != -1) {
                         String filmCategoriesClean = filmCategories.substring(0, filmCategories.indexOf(" ("));
-                        filmCategories = filmCategoriesClean;
+                        filmCategories = filmCategoriesClean.substring(3);
                     }
                     f.setDescription(filmDescription);
                     f.setCategorie(filmCategories);
